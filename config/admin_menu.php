@@ -10,7 +10,7 @@ return [
         'icon' => '👥',
         'label' => 'Users',
         'items' => [
-            'All Users',
+            ['label' => 'All Users', 'route' => 'admin.users.index'],
             'Roles & Permissions',
             'User Verification',
             'User Activity',

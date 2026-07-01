@@ -23,6 +23,10 @@ class AdminMenuTest extends TestCase
             $sectionSlug = Str::slug($section['label']);
 
             foreach ($section['items'] as $item) {
+                if (! is_string($item)) {
+                    continue;
+                }
+
                 $itemSlug = Str::slug($item);
 
                 $response = $this->actingAs($admin)->get("/admin/{$sectionSlug}/{$itemSlug}");

@@ -20,12 +20,19 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
             'name' => 'Test User',
             'email' => 'test@example.com',
+            'status' => \App\Enums\UserStatus::Active,
+            'plan' => \App\Enums\UserPlan::Free,
         ]);
 
         User::factory()->create([
             'name' => 'Admin',
             'email' => 'admin@example.com',
             'is_admin' => true,
+            'status' => \App\Enums\UserStatus::Active,
+            'plan' => \App\Enums\UserPlan::Enterprise,
+            'role' => \App\Enums\UserRole::Admin,
         ]);
+
+        $this->call(UserSeeder::class);
     }
 }

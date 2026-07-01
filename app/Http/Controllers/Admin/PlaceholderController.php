@@ -19,6 +19,10 @@ class PlaceholderController extends Controller
             }
 
             foreach ($menuSection['items'] as $menuItem) {
+                if (! is_string($menuItem)) {
+                    continue;
+                }
+
                 if (Str::slug($menuItem) === $item) {
                     return view('admin.placeholder', [
                         'sectionIcon' => $menuSection['icon'],
