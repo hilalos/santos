@@ -18,6 +18,33 @@ return [
         ],
     ],
     [
+        'icon' => '🎬',
+        'label' => 'AI Ad Studio',
+        'items' => [
+            'Ad Projects',
+            'Image Generations',
+            'Video Generations',
+            'Ad Copy Generations',
+            'Brand Kits',
+            'Templates',
+            'Asset Library',
+        ],
+    ],
+    [
+        'icon' => '🤖',
+        'label' => 'AI Engine',
+        'items' => [
+            'AI Providers',
+            'Image Models',
+            'Video Models',
+            'Copywriting Models',
+            'Prompt Templates',
+            'Style Presets',
+            'Safety Moderation',
+            'API Keys',
+        ],
+    ],
+    [
         'icon' => '💳',
         'label' => 'Billing',
         'items' => [
@@ -34,24 +61,28 @@ return [
     ],
     [
         'icon' => '💰',
-        'label' => 'Finance',
+        'label' => 'Credits & Usage',
         'items' => [
-            'Earnings',
-            'Transactions',
-            'Payouts',
-            'Withdraw Requests',
-            'Affiliate Program',
+            'Credits Overview',
+            'Credit Packages',
+            'Credit Transactions',
+            'Usage Limits',
+            'AI API Usage',
+            'Cost Tracking',
+            'Failed Generations',
         ],
     ],
     [
-        'icon' => '🏪',
-        'label' => 'Marketplace',
+        'icon' => '📈',
+        'label' => 'Analytics',
         'items' => [
-            'Listings',
-            'Categories',
-            'Reviews',
-            'Reports',
-            'Featured Listings',
+            'Revenue',
+            'Users',
+            'Conversions',
+            'Generation Analytics',
+            'Model Usage',
+            'Campaign Performance',
+            'Server Status',
         ],
     ],
     [
@@ -61,6 +92,7 @@ return [
             'Tickets',
             'FAQ',
             'Contact Messages',
+            'Abuse Reports',
         ],
     ],
     [
@@ -88,18 +120,6 @@ return [
             'Footer',
             'Custom CSS',
             'Custom JS',
-        ],
-    ],
-    [
-        'icon' => '🤖',
-        'label' => 'AI',
-        'items' => [
-            'AI Providers',
-            'Models',
-            'Prompt Templates',
-            'Usage Limits',
-            'Credits',
-            'API Keys',
         ],
     ],
     [
@@ -131,17 +151,6 @@ return [
         ],
     ],
     [
-        'icon' => '📈',
-        'label' => 'Analytics',
-        'items' => [
-            'Revenue',
-            'Users',
-            'Conversions',
-            'API Usage',
-            'Server Status',
-        ],
-    ],
-    [
         'icon' => '📝',
         'label' => 'Logs',
         'items' => [
@@ -149,6 +158,8 @@ return [
             'Error Logs',
             'Audit Logs',
             'Login Logs',
+            'AI Generation Logs',
+            'Webhook Logs',
         ],
     ],
     [
